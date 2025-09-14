@@ -8,6 +8,7 @@ use Filament\Actions\ViewAction;
 use Filament\Tables\Filters\Filter;
 use Filament\Support\Icons\Heroicon;
 use Filament\Actions\BulkActionGroup;
+use Filament\Actions\DeleteAction;
 use Filament\Schemas\Components\Flex;
 use Filament\Actions\DeleteBulkAction;
 use Filament\Actions\RestoreBulkAction;
@@ -115,6 +116,7 @@ class LoanApplicationsTable
             ->recordActions([
                 ViewAction::make(),
                 EditAction::make(),
+                DeleteAction::make(),
             ])
             ->toolbarActions([
                 BulkActionGroup::make([
