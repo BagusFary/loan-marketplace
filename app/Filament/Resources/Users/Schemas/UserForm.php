@@ -32,7 +32,8 @@ class UserForm
                 ]),
                 TextInput::make('password')
                     ->password()
-                    ->required(),
+                    ->required()
+                    ->visibleOn('create')
             ]);
     }
 }

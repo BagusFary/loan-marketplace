@@ -1,0 +1,21 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Lender extends Model
+{
+    protected $table = 'lenders';
+    protected $fillable = [
+        'user_id',
+        'company_name',
+        'address',
+        'phone'
+    ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'user_id', 'id');
+    }
+}

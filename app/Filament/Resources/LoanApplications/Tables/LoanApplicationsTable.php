@@ -35,28 +35,6 @@ class LoanApplicationsTable
                     ->formatStateUsing(function ($state){
                         return $state . ' months';
                     }),
-                IconColumn::make('status')
-                    ->icon( function($state) {
-                        return match ($state){
-                            'approve' => Heroicon::CheckCircle,
-                            'reject' => Heroicon::XCircle,
-                            'pending' => Heroicon::Clock
-                        };
-                    })
-                    ->color( function($state){
-                        return match ($state){
-                            'approve' => 'success',
-                            'reject' => 'danger',
-                            'pending' => 'warning'
-                        };
-                    })
-                    ->tooltip( function($state){
-                        return match($state){
-                            'approve' => 'Approved',
-                            'reject' => 'Rejected',
-                            'pending' => 'Pending'
-                        };
-                    }),
             ])
             ->filters([
                 SelectFilter::make('user_id')
@@ -72,14 +50,6 @@ class LoanApplicationsTable
                         6 => '6 Months',
                         12 => '12 Months'
                     ])
-                    ->native(false),
-                SelectFilter::make('status')
-                    ->options([
-                        'approve' => 'Approved',
-                        'reject' => 'Rejected',
-                        'pending' => 'Pending'
-                    ])
-                    ->placeholder('Select Status')
                     ->native(false),
                 Filter::make('amount')
                     ->label('Amount')
