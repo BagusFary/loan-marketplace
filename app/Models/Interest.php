@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Offer;
 use App\Models\Lender;
 use Illuminate\Database\Eloquent\Model;
 
@@ -21,6 +22,6 @@ class Interest extends Model
 
     public function offers()
     {
-        return $this->hasMany(Offers::class, 'interest_id', 'id');
+        return $this->hasMany(Offer::class, 'interest_id', 'id');
     }
 }

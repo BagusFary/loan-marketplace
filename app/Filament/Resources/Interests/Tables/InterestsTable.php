@@ -59,13 +59,13 @@ class InterestsTable
                                 ->minValue(0)
                                 ->label('Interest Min')
                                 ->placeholder('Interest Minimum')
-                                ->prefix('Rp.'),
+                                ->suffix('%'),
                                 TextInput::make('interest_max')
                                 ->numeric()
                                 ->maxValue(50000000)
                                 ->label('Interest Max')
                                 ->placeholder('Interest Maximum')
-                                ->prefix('Rp.'),
+                                ->suffix('%'),
                             ]),
                         ])
                     ])
