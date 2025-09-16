@@ -98,11 +98,12 @@ Berikut adalah daftar pengguna default yang dibuat oleh *seeder* untuk tujuan pe
 ## 🔑 Authentication Routes
 
 ### 👤 User
-- [Register](http://localhost:8000/register)  
-- [Login](http://localhost:8000/login)  
+- Register: `http://localhost:8000/register`  
+- Login: `http://localhost:8000/login`  
 
 ### 💼 Lender
-- [Lender Login](http://localhost:8000/lender/login)  
+- Lender Login: `http://localhost:8000/lender/login`  
 
 ### 🛠️ Admin
-- [Admin Login](http://localhost:8000/admin/login)  
+- Admin Login: `http://localhost:8000/admin/login`  
+  
