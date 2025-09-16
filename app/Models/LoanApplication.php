@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Offer;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
@@ -25,4 +26,8 @@ class LoanApplication extends Model
         return $this->belongsTo(User::class, 'user_id', 'id');
     }
 
+    public function offers()
+    {
+        return $this->hasMany(Offer::class, 'loan_id', 'id');
+    }
 }
