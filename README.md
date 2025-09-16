@@ -94,3 +94,15 @@ Berikut adalah daftar pengguna default yang dibuat oleh *seeder* untuk tujuan pe
 | **Borrower** | `thomas@gmail.com` | `12345678` |
 
 ---
+
+## 🔑 Authentication Routes
+
+### 👤 User
+- [Register](http://localhost:8000/register)  
+- [Login](http://localhost:8000/login)  
+
+### 💼 Lender
+- [Lender Login](http://localhost:8000/lender/login)  
+
+### 🛠️ Admin
+- [Admin Login](http://localhost:8000/admin/login)  
