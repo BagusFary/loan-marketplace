@@ -82,6 +82,11 @@ php artisan migrate
 php artisan db:seed
 ```
 
+### 6. Jalankan Aplikasi
+```bash
+composer run dev
+```
+
 ### 📊 Role & Login Awal
 
 Berikut adalah daftar pengguna default yang dibuat oleh *seeder* untuk tujuan pengembangan dan pengujian awal.
@@ -107,3 +112,60 @@ Berikut adalah daftar pengguna default yang dibuat oleh *seeder* untuk tujuan pe
 ### 🛠️ Admin
 - Admin Login: `http://localhost:8000/admin/login`  
   
+---
+
+## Tampilan sisi Borrower (Peminjam)
+
+### Dashboard
+![Borrower Dashboard](screenshots/borrower/borrower_dashboard.png)
+
+### Form Application
+![Borrower Form Application](screenshots/borrower/borrower_form_application.png)
+
+### Loan List
+![Borrower Loan List](screenshots/borrower/borrower_loan_list.png)
+
+### Login
+![Borrower Login](screenshots/borrower/borrower_login.png)
+
+### Making Offer
+![Borrower Making Offer](screenshots/borrower/borrower_making_offer.png)
+
+### Offering Page 1
+![Borrower Offering Page 1](screenshots/borrower/borrower_offering_page.png)
+
+### Offering Page 2
+![Borrower Offering Page 2](screenshots/borrower/borrower_offering_page_2.png)
+
+### Register
+![Borrower Register](screenshots/borrower/borrower_register.png)
+
+
+### Tampilan Sisi Lender (Pemberi Dana)
+
+**1. Halaman Login**
+![Halaman Login Lender](screenshots/lender/lender_login.png)
+
+**2. Halaman Dashboard**
+![Halaman Dashboard Lender](screenshots/lender/lender_dashboard.png)
+
+**3. Halaman Penawaran Sumber Daya**
+![Halaman Penawaran Lender](screenshots/lender/lender_offer_resource.png)
+
+**4. Halaman Bunga Sumber Daya**
+![Halaman Bunga Lender](screenshots/lender/lender_interest_resource.png)
+
+
+### Tampilan Sisi Admin
+
+**1. Halaman Login**
+![Halaman Login Admin](screenshots/admin/admin_login.png)
+
+**2. Halaman Kelola Pengguna (Users)**
+![Halaman Kelola Pengguna](screenshots/admin/admin_users_resource.png)
+
+**3. Halaman Kelola Lender**
+![Halaman Kelola Lender](screenshots/admin/admin_lender_resource.png)
+
+**4. Halaman Kelola Pinjaman (Loan)**
+![Halaman Kelola Pinjaman](screenshots/admin/admin_loan_resource.png)
